@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turtly</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -18,18 +19,28 @@
              <div class="campo">
                 <label for="username">Usuário:</label>
                 <input type="text" id="username" placeholder="Username" name="username" required>
+                <i class="bx bxs-user"></i>
              </div>
              <div class="campo">
                 <label for="password">Senha:</label>
                 <input type="password" id="password" placeholder="Password" name="password" required>
+                <i class="bx bxs-lock-alt"></i>
              </div>
+             <div class="opcoes">
+                <label class="lembre">
+                <input class="lembre-de-mim" type="checkbox" id="lembre-de-mim" name="lembre-de-mim">
+                Lembrar minha senha
+                </label>
+                <a class="esqueci-senha" href="#">Esqueci minha senha</a>
+            </div>
+            
             <div class="botao-login">
                 <a href="#">ENTRAR NO CASQUINHO</a>
             </div> 
             </form>
         </div>
         <div class="pagina-registro">
-            <p>Ainda sem casquinho? <a href="#">Vamos montar um pra você!</a></p>
+            <p>Ainda sem casquinho? <a href="cadastro.html">Vamos montar um pra você!</a></p>
             
         </div>
         </section>

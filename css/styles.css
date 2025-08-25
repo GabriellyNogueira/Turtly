@@ -13,26 +13,42 @@ body {
   background: radial-gradient(circle, #7cce6b, #d8ffd0);
 }
 
-
-
 .titulos {
+    margin-top: 7%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    justify-content: center;
+    /*border: 2px solid red; */
+}
+
+.titulos h1{
+    font-size: 50px;
+    color: #00740f;
+}
+.titulos h2 {
+    font-size: 45px;
+    color: #00740f;
+}
+
+.titulo {
     margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
     justify-content: center;
-   /* border: 2px solid red; */
 }
-
-.titulos h1{
-    font-size: 65px;
-    color: #00740f;
-}
-.titulos h2 {
-    font-size: 35px;
+.titulo h1 {
+    margin-top: 8%;
+    font-size: 30px;
     color: #00740f;
 }
 
+.titulo h2 {
+    margin-top:2px;
+    font-size: 25px;
+    color: #397d5b;
+}
 .acesso {
     display: flex;
     flex-direction: column;
@@ -43,36 +59,83 @@ body {
 form {
     display: flex;
     flex-direction: column;
-    padding-top: 28px;
+    padding-top: 25px;
    align-items: center;
-   gap: 20px;
-   
-   
+   gap: 5px;
+   outline: none;
+
 }
 
 .campo {
     display: flex;
     align-items: center;
 }
+.campo i {
+    position: absolute;
+    right: 500px;
+    color: #00740F;
+    font-size: 16px;
+}
 
 label {
- font-size: 22px;
+ font-size: 18px;
  padding: 25px;
  color: #00740f;
  margin-left: 50px;
  
 }
-
+.opcoes {
+display: flex;
+margin-top:0;
+margin-bottom:0;
+padding-bottom: 0;
+padding-top: 20px;
+ 
+}
+.lembre-de-mim {
+    display: flex;
+    text-align: left;
+    margin-right:0;
+    height: 15px;
+    width: 20px;
+   /* border: 2px solid red;*/
+    background: #00740F;
+    accent-color: #00740f;
+    margin: -2px;
+    margin-right: 5px;
+}
+.lembre {
+    display: flex;
+    margin: -10px;
+   margin-right:50px;
+   padding:0;
+   font-size: 14px;
+  /* border: 2px solid red;*/
+}
+.esqueci-senha  {
+   display: flex;
+   margin-right: 50px;
+   margin: -10px;
+   font-size: 14px;
+  /* margin-left: 290px;
+   margin-bottom: 500px;*/
+   /* border: 2px solid red;*/
+   text-align: left;
+   text-decoration: none;
+   color: #00740f;
+}
+.esqueci-senha:hover {
+    text-decoration: underline;
+}
 input {
-    height: 70px;
-    width: 490px;
+    height: 50px;
+    width: 500px;
     padding-left: 10px;
     font-size: 14px;
     background: transparent;
     border: 4px solid #00740f;
-    border-radius: 50px;
+    border-radius: 20px;
     margin-right: 20%;
-    margin-bottom: 33px;
 }
 input:focus{
     outline: none !important;
@@ -90,11 +153,13 @@ input:focus{
     display: inline-block;
     text-decoration: none;
     background:#00740f ;
-    padding: 20px 30px ;
+    padding: 20px 25px ;
     color: #dff5e1;
     border-radius: 25px;
     border: 4px dashed #abe79e;
-    margin-left: 20px;
+    margin-top: 40px;
+    margin-left: 25px;
+    margin-right: 20px;
     transition: transform 0.3s ease;
 }
 
@@ -102,22 +167,89 @@ input:focus{
     transform: scale(1.1);
 }
 
-.pagina-registro {
-     display: flex;
+
+
+.cadastro{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 5%;
+   outline: none;
+}
+.formulario-cadastro {
+    display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 35px;
-    margin-left: 15px;
-   /* border: 2px solid red;*/
+    
+}
+.campo2 i {
+    position: absolute;
+    right: 492px;
+    padding-bottom: 1000px;
+    color: #00740F;
+    font-size: 16px;
+    margin-top: 43px;
+}
+.input-cadastro {
+    height: 50px;
+    width: 400px;
+}
+.seuemail {
+    height: 50px;
+    width: 400px;
+}
+.suasenha {
+    height: 50px;
+    width: 400px;
+    margin-bottom: 40px;
+}
+.label-cadastro {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    padding: 0;
+    color: #00740f;
+    
 }
 
-.pagina-registro a {
+.botao-cadastro a {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 100px;
+    gap: 20px;
+    margin-top: 100px ;
+    text-decoration: none;
+    background:#00740f ;
+    padding: 10px 20px ;
+    color: #dff5e1;
+    border-radius: 25px;
+    border: 4px dashed #abe79e;
+    margin-left: 20px;
+    transition: transform 0.3s ease; 
+}
+.botao-cadastro a:hover{
+    transform: scale(1.1);
+    background: transparent;
     color: #00740f;
-    font-weight: bold;
-    font-size: 15px;
+    border: #00740F dashed 4px;
+    transition: 0.5s;
 }
 
-.pagina-registro p {
-    color: #00740f;
-    font-size: 15px;
+.link-login, .pagina-registro {
+    text-align: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 5%;
+    text-decoration: none;
+    color: #166D41;
+}
+.link-login a, .pagina-registro a {
+    text-decoration: none;
+    color: #166D41;
+}
+.link-login a:hover, .pagina-registro a:hover {
+    text-decoration: underline;
 }
